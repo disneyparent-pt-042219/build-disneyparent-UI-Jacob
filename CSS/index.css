@@ -11,19 +11,41 @@
 .mainInfo {
   width: 95%;
 }
+.mainInfo img {
+  max-width: 78rem;
+  height: auto;
+}
 .imageHoverOne {
   display: flex;
   flex-direction: row;
 }
 .imageHoverOne .hoverOne img {
-  width: 48%;
+  width: 98%;
 }
 .imageHoverOne .hoverTwo img {
-  width: 48%;
+  width: 98%;
 }
 .imageHoverTwo {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+}
+.imageHoverTwo .hoverThree img {
+  width: 98%;
+}
+.imageHoverTwo .hoverFour img {
+  width: 98%;
 }
 .imageHoverThree {
+  display: flex;
+  flex-direction: row;
+}
+.imageHoverThree .hoverFive img {
+  width: 98%;
+}
+.imageHoverThree .hoverSix img {
+  width: 98%;
+}
+.menu {
   display: inline-block;
+  cursor: pointer;
 }
