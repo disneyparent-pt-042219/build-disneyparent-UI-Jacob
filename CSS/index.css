@@ -9,11 +9,13 @@
   height: auto;
 }
 .mainInfo {
-  width: 95%;
+  width: 100%;
 }
 .mainInfo img {
-  max-width: 78rem;
-  height: auto;
+  width: 100%;
+}
+.mainInfo p {
+  width: 90%;
 }
 .imageHoverOne {
   display: flex;
