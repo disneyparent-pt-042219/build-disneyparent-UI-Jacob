@@ -1,22 +1,15 @@
-class menu {
-    constructor(element) {
-      
-        this.element = element;
-
-        this.button = this.element.querySelector('.menu-button');
-      
-        this.content = this.element.querySelector('.menu-content');
-      
-        this.button.addEventListener('click', () => {
-        this.toggleContent()
-        })
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
     }
-  
-    toggleContent() {
-        this.content.classList.toggle('menu-hidden');
-    }
-}
-  
-
-
-let menu = document.querySelectorAll('.menu').forEach( menu => new menu(menu));
+  }

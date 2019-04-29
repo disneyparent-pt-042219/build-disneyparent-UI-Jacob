@@ -11,15 +11,15 @@
 </head>
 
 <body>
-    <script src="./Assets/Menu.js"></script>
 
     <div class="headerFill">
         <img src="./images/DisneyParentLogo.png">
-        <div class="menu">
-            <div class="menu-button"><button>Menu</button></div>
-            <div class="menu-content menu-hidden">
-                <a class="menu-link" href="" target="_blank">Sign Up</a>
-                <a class="menu-link" href="about.html" target="_blank">About Us</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Sign Up</a>
+                    <a href="about.html">About Us</a>
+                </div>
             </div>
         </div>
     </div>
@@ -57,3 +57,4 @@
     </footer>
 </body>
 </html>
+<script defer="defer" src="./Assets/Menu.js"></script>

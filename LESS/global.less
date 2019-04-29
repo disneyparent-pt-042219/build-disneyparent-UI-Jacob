@@ -1,3 +1,53 @@
+body {
+    background-color: @Blue-Grey;
+}
+.headerFill {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-flow: wrap;
+    background-color: @Light-Pink;
+}
+.headerFill img {
+    width: 30%;
+    height: auto;
+}
+
+.dropbtn {
+    display: flex;
+    background-color: @Light-Pink;
+    color: @Blue-Grey;
+    width: 10rem;
+    font-size: 64;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: @Light-Pink;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dropdown-content {
+    display: none;
+    width: 10rem;
+    background-color:@Light-Pink;
+    box-shadow: 0px 8px 16px 0px @Blue-Grey;
+    z-index: 1;
+}
+.dropdown-content a {
+    color:@Blue-Grey;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color:@Pink}
+  
+.show {display:block;}
+
 .mainInfo {
     width: 100%;
     img {
@@ -44,58 +94,89 @@
         min-width: 60%;
     }
 }
-.headerFill {
+.carousel {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    flex-flow: wrap;
-}
-.headerFill img {
-    width: 30%;
-    height: auto;
-}
-.headerFill menu {
-    z-index: 2;
-    right: 25px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+  }
+  .carousel .left-button,
+  .carousel .right-button {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    flex-direction: row;
+    color: @Light-Pink;
+    background-color: @Pink;
+    font-size: 40px;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    .menu-button {
-      padding: 15px;
-      border: 3px solid @White;
-      color: @White;
-      font-size: 20px;
-      font-weight: bold;
+  }
+  .carousel .left-button:hover,
+  .carousel .right-button:hover {
+    color: @Pink;
+    background-color: @Light-Pink;
+    border: 2px solid b;
+  }
+  .carousel .left-button {
+    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
+  }
+  .carousel .right-button {
+    top: 50%;
+    right: 25px;
+    transform: translate(0, -50%);
+  }
+  .carousel img {
+    width: 100%;
+    display: none;
+  }
+.carousel {
+    .width-100();
+    .flex(center, center);
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    @media(min-width: 1200px){
+      width: 1200px;
+    }
+    .left-button, .right-button {
+      .flex(center);
+      color: @Light-Pink;
+      background-color: @Pink;
+      font-size: 40px;
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
       &:hover {
-        background-color: @Pink;
+        color: @Pink;
+        background-color: @Light-Pink;
+        border: 2px solid @Blue-Grey;
       }
     }
-    .menu-content {
-      width: 100%;
-      background-color: @White;
-      display: flex;
-      flex-direction: column;
-      align-items: center;  
-      margin-top: 10px;
-      border: 2.5px solid @Blue-Grey;
+    .left-button {
+      top: 50%; 
+      left: 25px;
+      transform: translate(0, -50%);
     }
-    .menu-link {
-      width: 100%;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 18px;
-      text-decoration: none;
-      color: @Blue-Grey;
-      &:hover {
-        color: @White;
-        background-color: @Blue-Grey;
-      }
+    .right-button {
+      top: 50%; 
+      right: 25px;
+      transform: translate(0, -50%);
     }
-    .menu-hidden {
+    img {
+      .width-100();
       display: none;
     }
   }
-  
-  
-  
-  
-  
-  

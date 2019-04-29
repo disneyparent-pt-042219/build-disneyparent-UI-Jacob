@@ -12,40 +12,53 @@
 
 <body>
     <header class="headerFill">
-        <img src="./images/DisneyParentLogo.png">
-        <div class="menu">
-            <div class="menu-button">Menu</div>
-            <div class="menu-content menu-hidden">
-                <a class="menu-link" href="">Sign Up</a>
-                <a class="menu-link" href="index.html">Home</a>
+            <img src="./images/DisneyParentLogo.png">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Sign Up</a>
+                        <a href="index.html">Home</a>
+                    </div>
+                </div>
             </div>
-        </div>
     </header>
+    <div class="carousel">
+        <div class="left-button"><</div>
+            <img src="./Images/Erin-Ronae Scriber.jpg" />
+            <img src="./Images/Dexter Lewis.jpg" />
+            <img src="./Images/Aaron Harbaugh.jpg" />
+            <img src="./Images/Kyle Barnett.jpg" />
+            <img src="./Images/Jacob Wellner.jpg" />
+        <div class="right-button">></div>
+    </div>
+
     <div class="groupCards">
         <div class="cardOne">
-            <h3>Student1</h3>
-            <img src="">
-            <b class="github" href="">GitHub</b>
+            <h3>Erin-Ronae Scriber</h3>
+            <p>Team Lead/Backend Developer</p>
+            <b class="github" href="https://github.com/erscriber">GitHub</b>
         </div>
         <div class="cardTwo">
-            <h3>Student2</h3>
-            <img src="">
-            <b class="github" href="">GitHub</b>
+            <h3>Dexter Lewis</h3>
+            <p>Frontend Developer</p>
+            <b class="github" href="https://github.com/dxtrlws">GitHub</b>
         </div>
         <div class="cardThree">
-            <h3>Student3</h3>
-            <img src="">
-            <b class="github" href="">GitHub</b>
+            <h3>Aaron Harbaugh</h3>
+            <p>Frontend Developer</p>
+            <b class="github" href="https://github.com/aaharbaugh">GitHub</b>
         </div>
         <div class="cardFour">
-            <h3>Student4</h3>
-            <img src="">
-            <b class="github" href="">GitHub</b>
+            <h3>Kyle Barnett</h3>
+            <p>Web UI Developer</p>
+            <b class="github" href="https://github.com/kylebarnett">GitHub</b>
         </div>
         <div class="cardFive">
-            <h3>Student5</h3>
-            <img src="">
-            <b class="github" href="">GitHub</b>
+            <h3>Jacob Wellner</h3>
+            <p>Web UI Developer</p>
+            <b class="github" href="https://github.com/JacobWellner83">GitHub</b>
         </div>
     </div>
 </body>
+<script defer="defer" src="./Assets/Carousel.js"></script>
+<script defer="defer" src="./Assets/Menu.js"></script>
