@@ -1,195 +1,235 @@
 body {
-    background-color: @Blue-Grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: @Blue-Grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .headerFill {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-flow: wrap;
-    background-color: @Light-Pink;
-    width: 96%;
-    margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-flow: wrap;
+  background-color: @Light-Pink;
+  width: 96%;
+  margin-top: 2%;
 }
 .headerFill img {
-    width: 25%;
-    height: auto;
+  width: 25%;
+  height: auto;
+  @media(max-width: 501px) {
+    width: 50%;
+  }
 }
 
 .dropbtn {
-    display: flex;
-    background-color: @Light-Pink;
-    color: @Blue-Grey;
-    width: 8rem;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  background-color: @Light-Pink;
+  color: @Blue-Grey;
+  width: 8rem;
+  border: none;
+   cursor: pointer;
 }
 .dropbtn:hover, .dropbtn:focus {
-    background-color: @Light-Pink;
+  background-color: @Light-Pink;
 }
 .dropdown {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .dropdown-content {
-    display: none;
-    width: 10rem;
-    background-color:@Light-Pink;
-    box-shadow: 0px 8px 16px 0px @Blue-Grey;
-    z-index: 1;
+  display: none;
+  width: 10rem;
+  background-color:@Light-Pink;
+  box-shadow: 0px 8px 16px 0px @Blue-Grey;
+  z-index: 1;
 }
 .dropdown-content a {
-    color:@Blue-Grey;
-    text-decoration: none;
-    display: block;
+  color:@Blue-Grey;
+  text-decoration: none;
+  display: block;
 }
 .dropdown-content a:hover {background-color:@Pink}
   
 .show {display:block;}
 
+button {
+  font-size: 16pt;
+}
+
 .mainInfo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-        width: 96%;
-        align-self: center;
-    }
-    h1 {
-        width: 96%;
-        align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 96%;
+    align-self: center;
+  }
+  h1 {
+    width: 96%;
+    align-self: center;
         
-    }
-    p {
-        width: 96%;
-        text-align: center;
-        font-size: 16pt;
-    }
+  }
+  p {
+    width: 96%;
+    text-align: center;
+    font-size: 16pt;
+  }
 }
 .imageHoverOne {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 96%;
-    margin-bottom: 1%;
-    .hoverOne {
-        width: 48%;
-        img {
-        width: 100%;
-        height: auto;
-        }
-    }    
-    .hoverTwo {
-        width: 48%;
-        img {
-        width: 100%;
-        height: auto;
-        }
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 96%;
+  margin-bottom: 1%;
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hoverOne {
+    width: 48%;
+    img {
+    width: 100%;
+    height: auto;
     }
+    @media(max-width: 1024px) {
+      width: 95%;
+    }
+  }    
+  .hoverTwo {
+    width: 48%;
+    img {
+    width: 100%;
+    height: auto;
+    }
+    @media(max-width: 1024px) {
+      width: 95%;
+    }
+  }
 }
 .imageHoverTwo {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 96%;
-    margin-bottom: 1%;
-    .hoverThree {
-        width: 48%;
-        img {
-        width: 100%;
-        height: auto;
-        }
-    }    
-    .hoverFour {
-        width: 48%;
-        img {
-        width: 100%;
-        height: auto;
-        }
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 96%;
+  margin-bottom: 1%;
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hoverThree {
+    width: 48%;
+    img {
+    width: 100%;
+    height: auto;
     }
+    @media(max-width: 1024px) {
+      width: 95%;
+    }
+  }    
+  .hoverFour {
+    width: 48%;
+    img {
+    width: 100%;
+    height: auto;
+    }
+    @media(max-width: 1024px) {
+      width: 95%;
+    }
+  }
 }
 .imageHoverThree {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 96%;
-    margin-bottom: 1%;
-    .hoverFive {
-        width: 48%;
-        img {
-        width: 100%;
-        height: auto;
-        }
-    }    
-    .hoverSix {
-        width: 48%;
-        img {
-        width: 100%;
-        height: auto;
-        }
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 96%;
+  margin-bottom: 1%;
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hoverFive {
+    width: 48%;
+    img {
+    width: 100%;
+    height: auto;
     }
+    @media(max-width: 1024px) {
+      width: 95%;
+    }
+  }    
+  .hoverSix {
+    width: 48%;
+    img {
+    width: 100%;
+    height: auto;
+    }
+    @media(max-width: 1024px) {
+      width: 95%;
+    }
+  }
 }
 .carousel {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    margin-top: 16px;
-  }
-  .carousel .left-button,
-  .carousel .right-button {
-    display: flex;
-    justify-content: center;
-    align-items: none;
-    flex-direction: row;
-    color: @Light-Pink;
-    background-color: @Pink;
-    font-size: 40px;
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
-  .carousel .left-button:hover,
-  .carousel .right-button:hover {
-    color: @Pink;
-    background-color: @Light-Pink;
-    border: 2px solid b;
-  }
-  .carousel .left-button {
-    top: 50%;
-    left: 25px;
-    transform: translate(0, -50%);
-  }
-  .carousel .right-button {
-    top: 50%;
-    right: 25px;
-    transform: translate(0, -50%);
-  }
-  .carousel img {
-    width: 100%;
-    display: none;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: @Light-Pink;
+  background-color: @Pink;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: @Pink;
+  background-color: @Light-Pink;
+  border: 2px solid b;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
 .carousel {
-    .width-100();
-    .flex(center, center);
+  .width-100();
+  .flex(center, center);
     height: auto;
     position: relative;
     overflow: hidden;
     margin-top: 16px;
     @media(min-width: 1200px){
       width: 600px;
+    }
+    @media(max-width: 1024px){
+      width: 95%
     }
     .left-button, .right-button {
       .flex(center);
@@ -222,6 +262,47 @@ body {
     }
 }
 .github {
-    color: @Pink;
-    text-decoration: none;
+  color: @Pink;
+  text-decoration: none;
+}
+.groupCards {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 75%;
+  @media only screen and (max-width: 1024px) {
+    width: 95%;
+    flex-flow: column;
+    align-items: center;
+  }
+  .cardOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardFour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardFive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

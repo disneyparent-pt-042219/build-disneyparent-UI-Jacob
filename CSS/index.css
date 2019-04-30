@@ -18,6 +18,11 @@ body {
   width: 25%;
   height: auto;
 }
+@media (max-width: 501px) {
+  .headerFill img {
+    width: 50%;
+  }
+}
 .dropbtn {
   display: flex;
   background-color: #fa9fc9;
@@ -54,6 +59,9 @@ body {
 .show {
   display: block;
 }
+button {
+  font-size: 16pt;
+}
 .mainInfo {
   width: 100%;
   display: flex;
@@ -80,12 +88,23 @@ body {
   width: 96%;
   margin-bottom: 1%;
 }
+@media (max-width: 1024px) {
+  .imageHoverOne {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .imageHoverOne .hoverOne {
   width: 48%;
 }
 .imageHoverOne .hoverOne img {
   width: 100%;
   height: auto;
+}
+@media (max-width: 1024px) {
+  .imageHoverOne .hoverOne {
+    width: 95%;
+  }
 }
 .imageHoverOne .hoverTwo {
   width: 48%;
@@ -94,12 +113,23 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 1024px) {
+  .imageHoverOne .hoverTwo {
+    width: 95%;
+  }
+}
 .imageHoverTwo {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 96%;
   margin-bottom: 1%;
+}
+@media (max-width: 1024px) {
+  .imageHoverTwo {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .imageHoverTwo .hoverThree {
   width: 48%;
@@ -108,12 +138,22 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 1024px) {
+  .imageHoverTwo .hoverThree {
+    width: 95%;
+  }
+}
 .imageHoverTwo .hoverFour {
   width: 48%;
 }
 .imageHoverTwo .hoverFour img {
   width: 100%;
   height: auto;
+}
+@media (max-width: 1024px) {
+  .imageHoverTwo .hoverFour {
+    width: 95%;
+  }
 }
 .imageHoverThree {
   display: flex;
@@ -122,6 +162,12 @@ body {
   width: 96%;
   margin-bottom: 1%;
 }
+@media (max-width: 1024px) {
+  .imageHoverThree {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .imageHoverThree .hoverFive {
   width: 48%;
 }
@@ -129,12 +175,22 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 1024px) {
+  .imageHoverThree .hoverFive {
+    width: 95%;
+  }
+}
 .imageHoverThree .hoverSix {
   width: 48%;
 }
 .imageHoverThree .hoverSix img {
   width: 100%;
   height: auto;
+}
+@media (max-width: 1024px) {
+  .imageHoverThree .hoverSix {
+    width: 95%;
+  }
 }
 .carousel {
   width: 100%;
@@ -198,6 +254,11 @@ body {
     width: 600px;
   }
 }
+@media (max-width: 1024px) {
+  .carousel {
+    width: 95%;
+  }
+}
 .carousel .left-button,
 .carousel .right-button {
   display: flex;
@@ -235,6 +296,49 @@ body {
 .github {
   color: #e83e8c;
   text-decoration: none;
+}
+.groupCards {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 75%;
+}
+@media only screen and (max-width: 1024px) {
+  .groupCards {
+    width: 95%;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+.groupCards .cardOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.groupCards .cardTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.groupCards .cardThree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.groupCards .cardFour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.groupCards .cardFive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .width-100 {
   width: 100%;
